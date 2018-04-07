@@ -9,12 +9,121 @@ body {
 
 .mainFont {
   font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 100px;
+  letter-spacing: -7px;
+  transform:scale(1.4,1); 
+  -webkit-transform:scale(1.4,1);
+  -moz-transform:scale(1.4,1);
+  -ms-transform:scale(1.4,1);
+  -o-transform:scale(1.4,1);
+}
+
+.title_container {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_title {
 }
 
 .subFont {
   font-family: 'Source Serif Pro', serif;
 }
 
+.blurb_container {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 35%;
+}
+
+.date_info {
+  letter-spacing: -1.4px;
+  width: 350px;
+  font-size: 25px;
+  transform:scale(1.1,1); 
+  -webkit-transform:scale(1.1,1);
+  -moz-transform:scale(1.1,1);
+  -ms-transform:scale(1.1,1);
+  -o-transform:scale(1.1,1);
+}
+
+.blurb {
+  margin-top: 5px;
+  width: 350px;
+  letter-spacing: -0.3px;
+  transform:scale(1.1,1); 
+  -webkit-transform:scale(1.1,1);
+  -moz-transform:scale(1.1,1);
+  -ms-transform:scale(1.1,1);
+  -o-transform:scale(1.1,1);
+}
+
+.flex_link_container {
+  width: 370px;
+  border-color: red;
+  margin-right: 5px;
+  margin-top: 30px
+}
+
+.tix_link {
+}
+
+.tix_link:link {
+  text-decoration: none;
+}
+
+.tix_link:visited {
+  text-decoration: none;
+}
+
+.tix_link:hover {
+  text-decoration: none;
+}
+
+.tix_button {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  border-style: solid;
+  border-width: 6px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  letter-spacing: -1px;
+  font-size: 25px;
+  border-radius: 80px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  color: #231F20;
+}
+
+.tix_button:hover {
+  border-color: #FFE70A;
+  color: #FFE70A;
+}
+
+.tix_text{
+  transform:scale(1.3,1); 
+  -webkit-transform:scale(1.3,1);
+  -moz-transform:scale(1.3,1);
+  -ms-transform:scale(1.3,1);
+  -o-transform:scale(1.3,1);
+}
 
 section a {
   color: #F4834A;
@@ -152,6 +261,7 @@ ul.top_header_content_list li.hamburger {
   min-width: 1000px;
   position: absolute;
   top: -100px;
+  z-index: -1;
 }
 
 #top_blob {
@@ -164,8 +274,9 @@ ul.top_header_content_list li.hamburger {
   width: 140%;
   min-width: 1700px;
   position: absolute;
-  bottom: -250px;
+  bottom: -275px;
   left: -15%;
+  z-index: -1;
 }
 
 #bott_blob {
