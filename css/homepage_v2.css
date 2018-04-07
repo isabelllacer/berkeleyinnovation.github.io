@@ -7,6 +7,14 @@ body {
 
 }
 
+.mainFont {
+  font-family: 'Karla', sans-serif;
+}
+
+.subFont {
+  font-family: 'Source Serif Pro', serif;
+}
+
 
 
 section a {
