@@ -16,7 +16,6 @@ body {
 }
 
 
-
 section a {
   color: #F4834A;
   text-decoration: none;
@@ -145,6 +144,33 @@ header li:hover .circle {
 
 ul.top_header_content_list li.hamburger {
   display: none;
+}
+
+
+.top_blob_container {
+  width: 100%;
+  min-width: 1000px;
+  position: absolute;
+  top: -100px;
+}
+
+#top_blob {
+  width: 100%;
+  height:100%;
+}
+
+
+.bott_blob_container {
+  width: 140%;
+  min-width: 1700px;
+  position: absolute;
+  bottom: -250px;
+  left: -15%;
+}
+
+#bott_blob {
+  width: 100%;
+  height:100%;
 }
 
 
