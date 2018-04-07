@@ -3,7 +3,7 @@ body {
   font-family: "proxima-nova",sans-serif;
   margin: 0;
   width: 100%;
-  /*overflow-y: hidden;*/
+  overflow-y: hidden;
 
 }
 
@@ -148,7 +148,7 @@ header a {
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
-  color: #3C5B81;
+  color: black;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -161,7 +161,7 @@ header a {
 }
 
 header li:hover a {
-  color: #F4834A;
+  color: #FFE70A;
 }
 
 
@@ -212,6 +212,16 @@ header li:hover .circle {
   text-align: center;
 }
 
+
+.highlighter {
+  padding: 0.7px 0;
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+  box-shadow: 5px 0 0 #ffffff, -5px 0 0 #ffffff;
+}
+
 .circle {
   visibility: hidden;
   color: #F4834A;
@@ -234,16 +244,17 @@ header li:hover .circle {
 }
 
 .active_circle {
-  visibility: visible;
+  visibility: hidden;
   opacity: 1;
 }
 
 
 #bi_logo {
-  height: 60px;
+  height: 80px;
   margin-bottom: -20px;
   pointer-events: none;
 }
+
 
 .nav_item {
   position: relative;
@@ -455,7 +466,9 @@ footer a:hover {
 }
 
 #bi_logo {
-  height: 60px;
+  height: 70px;
+  position: relative;
+  z-index: 10;
 /*  margin-bottom: -10px;*/
   pointer-events: none;
 }
